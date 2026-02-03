@@ -25,7 +25,7 @@ try:
     print("2. Regras de limpeza aplicadas.")
 
     # 3.(Load)
-    conn = sqlite3.connect('base_blackbird.db')
+    conn = sqlite3.connect('base_dados.db')
     tabela_limpa.to_sql('clientes_tratados', conn, if_exists='replace', index=False)
     conn.close()
     print("3. Dados salvos no banco SQL local.")
