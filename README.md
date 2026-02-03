@@ -22,7 +22,7 @@ O script `tratamento_dados.py` executa as seguintes etapas:
     * **Sanitização:** Remove registros com valores de investimento negativos ou inválidos (Regra de Negócio).
     * **Enriquecimento:** Adiciona uma coluna de `Data_Processamento` para garantir rastreabilidade (Audit Trail).
 3.  **Carga (Load):**
-    * Exporta os dados validados para um banco de dados SQL local (`base_blackbird.db`).
+    * Exporta os dados validados para um banco de dados SQL local (`base_dados.db`).
     * Utiliza a lógica de `replace` para permitir a reexecução do script mantendo os dados sempre atualizados.
 4.  **Segurança:**
     * Implementação de blocos `try/except` para capturar falhas críticas sem quebrar a execução abruptamente.
